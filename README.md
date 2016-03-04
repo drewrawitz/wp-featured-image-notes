@@ -5,7 +5,8 @@ Sometimes you might need to provide image guidelines to your clients who are usi
 Screenshots
 ------
 
-Coming soon!
+![](https://raw.githubusercontent.com/drewrawitz/wp-featured-image-notes/master/assets/screenshot-1.png)
+![](https://raw.githubusercontent.com/drewrawitz/wp-featured-image-notes/master/assets/screenshot-2.png)
 
 Installation
 ------
