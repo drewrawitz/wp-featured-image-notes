@@ -100,4 +100,42 @@ class Featured_Image_Notes_Admin {
 
 	}
 
+  /**
+   * Register the administration menu for this plugin into the WordPress Dashboard menu.
+   *
+   * @since    1.0.0
+   */
+
+  public function add_plugin_admin_menu() {
+
+    /*
+     * Add a settings page for this plugin to the Settings menu.
+     *
+     */
+    add_options_page('Featured Image Notes', 'Featured Image Notes', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page'));
+  }
+
+ /**
+ * Add settings action link to the plugins page.
+ *
+ * @since    1.0.0
+ */
+
+  public function add_action_links( $links ) {
+   $settings_link = array(
+    '<a href="' . admin_url( 'options-general.php?page=' . $this->plugin_name ) . '">' . __('Settings', $this->plugin_name) . '</a>',
+   );
+   return array_merge(  $settings_link, $links );
+  }
+
+  /**
+   * Render the settings page for this plugin.
+   *
+   * @since    1.0.0
+   */
+
+  public function display_plugin_setup_page() {
+    include_once( 'partials/wp-cbf-admin-display.php' );
+  }
+
 }
