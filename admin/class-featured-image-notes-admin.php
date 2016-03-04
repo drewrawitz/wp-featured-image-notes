@@ -135,7 +135,26 @@ class Featured_Image_Notes_Admin {
    */
 
   public function display_plugin_setup_page() {
-    include_once( 'partials/wp-cbf-admin-display.php' );
+    include_once( 'partials/featured-image-notes-admin-display.php' );
+  }
+
+  public function validate($input) {
+    $valid = array();
+    $post_types = get_post_types(array(
+      'public' => true
+    ), 'objects');
+
+    foreach($post_types as $post_type) :
+      if(post_type_supports($post_type->name, 'thumbnail')) :
+        $valid[$post_type->name] = sanitize_text_field($input[$post_type->name.'_note']);
+      endif;
+    endforeach;
+
+    return $valid;
+   }
+
+  public function options_update() {
+    register_setting($this->plugin_name, $this->plugin_name, array($this, 'validate'));
   }
 
 }

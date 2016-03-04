@@ -2,3 +2,30 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+.fit-table {
+  width: 800px;
+  margin: 15px 0;
+}
+
+.fit-table thead tr th {
+  background: #0073aa;
+  color: white;
+}
+
+.fit-table .row-post {
+  width: 210px;
+}
+
+.fit-table tr.alternative td {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.fit-table .submit {
+  margin: 0;
+  padding: 0;
+}
+
+.fit-table__input {
+  width: 100%;
+}
