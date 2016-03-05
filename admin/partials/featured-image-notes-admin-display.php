@@ -44,10 +44,12 @@
         ), 'objects');
 
         foreach($post_types as $post_type) :
-          if(post_type_supports($post_type->name, 'thumbnail')) : ?>
+          if(post_type_supports($post_type->name, 'thumbnail')) :
+            $value = ($options) ? $options[$post_type->name] : '';
+        ?>
           <tr class="alternative">
             <td class="row-title"><?php echo $post_type->labels->singular_name; ?></td>
-            <td><input type="text" value="<?php echo $options[$post_type->name]; ?>" name="<?php echo $this->plugin_name; ?>[<?php echo $post_type->name;?>_note]" class="fit-table__input" /></td>
+            <td><input type="text" value="<?php echo $value; ?>" name="<?php echo $this->plugin_name; ?>[<?php echo $post_type->name;?>_note]" class="fit-table__input" /></td>
           </tr>
           <?php
           endif;
