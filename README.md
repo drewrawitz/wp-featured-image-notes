@@ -25,6 +25,11 @@ Installation
 Changelog
 ------
 
+#### 1.0.1
+
+* Fixed issue with the uploaded thumbnail not appearing when using this plugin.
+* Fixed syntax errors in the settings page when adding a new post type.
+
 #### 1.0
 
 * The plugin is born!
