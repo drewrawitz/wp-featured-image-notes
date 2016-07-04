@@ -67,7 +67,7 @@ class Featured_Image_Notes_Public {
       $data = null;
       $options = get_option('featured-image-notes');
 
-      if($options[$post->post_type]) {
+      if($options && isset($options[$post->post_type])) {
         $data .= $options[$post->post_type];
       }
 
