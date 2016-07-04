@@ -45,7 +45,7 @@
 
         foreach($post_types as $post_type) :
           if(post_type_supports($post_type->name, 'thumbnail')) :
-            $value = ($options) ? $options[$post_type->name] : '';
+            $value = ($options && isset($options[$post_type->name])) ? $options[$post_type->name] : '';
         ?>
           <tr class="alternative">
             <td class="row-title"><?php echo $post_type->labels->singular_name; ?></td>
