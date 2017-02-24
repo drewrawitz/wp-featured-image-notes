@@ -4,7 +4,7 @@
  * The public-facing functionality of the plugin.
  *
  * @link       http://www.drewrawitz.com
- * @since      1.0.0
+ * @since      1.0.2
  *
  * @package    Featured_Image_Notes
  * @subpackage Featured_Image_Notes/public
@@ -57,7 +57,7 @@ class Featured_Image_Notes_Public {
   /**
    * Register the hooks
    *
-   * @since    1.0.0
+   * @since    1.0.2
    */
   public function add_hooks() {
     add_filter('admin_post_thumbnail_html', 'featured_image_notes');
@@ -67,8 +67,8 @@ class Featured_Image_Notes_Public {
       $data = null;
       $options = get_option('featured-image-notes');
 
-      if($options && isset($options[$post->post_type])) {
-        $data .= $options[$post->post_type];
+      if($options && isset($options[$post->post_type]) && $options[$post->post_type]) {
+        $data .= "<p style=\"font-size: 12px;\"><strong>Note:</strong> ".$options[$post->post_type]."</p>";
       }
 
       $data .= $content;

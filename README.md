@@ -25,7 +25,12 @@ Installation
 Changelog
 ------
 
-#### 1.0.1
+#### 1.0.2
+
+* Minor style tweaks. Added *Note:* before the actual note, and reduced the font size a bit.
+* Fix to the conditional statement so we are only prepending the note if content exists.
+
+#### 1.0.2
 
 * Fixed issue with the uploaded thumbnail not appearing when using this plugin.
 * Fixed syntax errors in the settings page when adding a new post type.

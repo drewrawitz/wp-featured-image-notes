@@ -2,8 +2,8 @@
 Contributors: drewrawitz
 Tags: featured image, notes, meta box
 Requires at least: 3.0.1
-Tested up to: 4.5.3
-Stable tag: 1.0.1
+Tested up to: 4.7.2
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,7 +31,11 @@ None at the moment.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
+* Minor style tweaks. Added *Note:* before the actual note, and reduced the font size a bit.
+* Fix to the conditional statement so we are only prepending the note if content exists.
+
+= 1.0.2 =
 * Fixed issue with the uploaded thumbnail not appearing when using this plugin.
 * Fixed syntax errors in the settings page when adding a new post type.
 
