@@ -27,12 +27,14 @@ Sometimes you might need to provide image guidelines to your clients who are usi
 
 == Frequently Asked Questions ==
 
-None at the moment.
+= Why is my custom post type not listed? =
+
+Make sure it has Post Thumbnails support for your theme. You can read more about that here: https://codex.wordpress.org/Post_Thumbnails
 
 == Changelog ==
 
 = 1.0.2 =
-* Minor style tweaks. Added *Note:* before the actual note, and reduced the font size a bit.
+* Minor style tweaks. Added **Note:** before the actual note, and reduced the font size a bit.
 * Fix to the conditional statement so we are only prepending the note if content exists.
 
 = 1.0.2 =
