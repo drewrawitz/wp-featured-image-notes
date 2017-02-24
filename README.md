@@ -27,7 +27,7 @@ Changelog
 
 #### 1.0.2
 
-* Minor style tweaks. Added *Note:* before the actual note, and reduced the font size a bit.
+* Minor style tweaks. Added **Note:** before the actual note, and reduced the font size a bit.
 * Fix to the conditional statement so we are only prepending the note if content exists.
 
 #### 1.0.2
